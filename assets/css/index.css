@@ -12,11 +12,12 @@ a{
     align-self: center;
 }
 .logo{
+    color: #FA8A50;
     font-size: 22px;
     font-weight: bolder;
 }
 .logo:hover{
-    color: blue;
+    color: rgba(0, 0, 0, 0.478);
     transition: ease-in-out;
 }
 .navbar{
@@ -31,26 +32,50 @@ a{
 .landing{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .leftlanding{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-basis: 300px;
     margin-top: 40px;
-    padding-left: 80px;
-    padding-right: 80px;
+    gap: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.rightlanding{
+    flex-basis: 300px;
+    margin-top: 40px;
+    align-self: center;
+    padding-left: 30px;
+    padding-right: 60px;
 }
 .leftlanding h1{
-    
+    font-size: 70px;
+    color: #FA8A50;
 }
+.leftlanding p{
+    font-size: 24px;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.754);
+}
+
 .navbar a:nth-of-type(2){
     margin-left: auto;
+    color: rgba(0, 0, 0, 0.774);
+}
+.navbar a:nth-of-type(3){
+    color: rgba(0, 0, 0, 0.774);
+    
 }
 .fa-comment{
     margin-right: 8px;
 }
 .navbar .dropdown{
     color: white;
-    background-color: blue;
+    background-color: #FA8A50;
     padding: 8px 16px;
     border-radius: 18px;
 }
@@ -68,15 +93,107 @@ form{
     width: 250px;
     gap: 15px;
     padding: 14px;
-    background-color: blue;
+    background-color: rgb(250, 138, 80);
 }
-button{
-    flex-basis: 20px;
-    width: 80px;
+form button{
+    background-color: black;
+    color: white;
+    padding: 14px;
+}
+textarea{
+    height: 100px;
+    border: 2px dotted black;
+}
+.buttons{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+.buttons a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.814);
+    color: #FA8A50;
+    width: 140px;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+}
+.rightlanding img{
+    width: 400px;
+}
+.fa-apple{
+    font-size: 2rem;
+}
+.fa-google-play{
+    font-size: 1.2rem;
+}
+span{
+    font-size: 11px;
 }
 input{
     height: 25px;
 }
-img{
-    width: 400px;
+
+div.subsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 40px 80px;
+    background-color: rgb(250, 138, 80);
+}
+div.subsection h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.subsection h1{
+    font-size: 3rem;
+}
+.subsection1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.subsection1 .leftsubsection1{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    align-items: center;
+    flex: 1 1 40%;
+}
+.subsection1 .rightsubsection1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 60%;
+    background-color: burlywood;
+}
+.rightsubsection1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rightsubsection1 .div1{
+    background-color: red;
+    flex: 1 1 50%;
+}
+.rightsubsection1 .div2{
+    background-color: yellow;
+    flex: 1 1 50%;
+    
+}
+.rightsubsection1 .div3{
+    flex: 1 1 50%;
+    background-color: black;
+    
+}
+.rightsubsection1 .div4{
+    flex: 1 1 50%;
+    background-color: green;
+
 }
