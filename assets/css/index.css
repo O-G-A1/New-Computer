@@ -24,16 +24,23 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    width: 100%;
     padding: 20px 160px;
     gap: 40px;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.629);
+}
+.tabnavbar{
+    display: none;
 }
 .landing{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 .leftlanding{
     display: flex;
@@ -46,6 +53,10 @@ a{
     padding-right: 120px;
 }
 .rightlanding{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
     flex-basis: 300px;
     margin-top: 40px;
     align-self: center;
@@ -53,7 +64,7 @@ a{
     padding-right: 60px;
 }
 .leftlanding h1{
-    font-size: 70px;
+    font-size:40px;
     color: #FA8A50;
 }
 .leftlanding p{
@@ -70,7 +81,7 @@ a{
     color: rgba(0, 0, 0, 0.774);
     
 }
-.fa-comment{
+.fa-car{
     margin-right: 8px;
 }
 .navbar .dropdown{
@@ -96,9 +107,12 @@ form{
     background-color: rgb(250, 138, 80);
 }
 form button{
-    background-color: black;
-    color: white;
-    padding: 14px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: #FA8A50;
+    padding: 11px;
+    font-size: 1.1rem;
 }
 textarea{
     height: 100px;
@@ -115,23 +129,21 @@ textarea{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.814);
     color: #FA8A50;
-    width: 140px;
+    width: 160px;
     border-radius: 8px;
     padding-left: 10px;
     padding-right: 10px;
     gap: 10px;
+    font-size: 18px;
 }
 .rightlanding img{
     width: 400px;
 }
-.fa-apple{
+.fa-car-on, .fa-car-burst{
     font-size: 2rem;
 }
-.fa-google-play{
-    font-size: 1.2rem;
-}
 span{
-    font-size: 11px;
+    font-size: 14px;
 }
 input{
     height: 25px;
@@ -147,7 +159,7 @@ div.subsection{
     background-color: rgb(250, 138, 80);
 }
 div.subsection h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -163,6 +175,7 @@ div.subsection h1{
     display: flex;
     flex-direction: row;
     padding-left: 60px;
+    margin-top: 60px;
     align-items: center;
     flex: 1 1 40%;
 }
@@ -171,7 +184,7 @@ div.subsection h1{
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1 1 60%;
-    background-color: burlywood;
+    margin-top: 60px;
 }
 .rightsubsection1{
     display: flex;
@@ -179,21 +192,292 @@ div.subsection h1{
     flex-wrap: wrap;
 }
 .rightsubsection1 .div1{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 45px;
     flex: 1 1 50%;
 }
 .rightsubsection1 .div2{
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 45px;
     flex: 1 1 50%;
     
 }
 .rightsubsection1 .div3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     flex: 1 1 50%;
-    background-color: black;
+    padding: 15px 45px;
     
 }
 .rightsubsection1 .div4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     flex: 1 1 50%;
-    background-color: green;
+    padding: 15px 45px;
 
+}
+.rightsubsection1 p{
+    text-align: center;
+}
+.rightsubsection1 h2{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.rightsubsection1 i{
+    font-size: 3rem;
+    color: rgb(250, 138, 80);
+}
+
+div.subsection2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 3px 3px 22px rgb(250, 138, 80);
+}
+
+.leftsubsection2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1 1 30%;
+    padding: 60px 80px;
+}
+.leftsubsection2 h2{
+    font-size: 1.4rem;
+    color: rgb(250, 138, 80);
+
+}
+.leftsubsection2 p{
+    font-size: 1rem;
+}
+.rightsubsection2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 150px;
+
+}
+div.subsection3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FA8A50;
+    padding: 60px 80px;
+    gap: 30px;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+div.subsection3 a{
+    background-color: black;
+    color: #FA8A50;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all ease-in-out;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    transition-duration: 1s;
+    
+}
+div.subsection3 > .div1 > h2{
+    font-size: 2rem;
+    color: black;
+}
+div.subsection3 a:hover{
+    top: 2px;
+    color: black;
+    background-color: white;
+}
+div.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 6px black;
+}
+div.footer *{
+    color: #FA8A50;
+}
+@media all and (max-width:849px){
+    .navbar{
+        display: none;
+    }
+    .tabnavbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 160px;
+    }
+    .tabnavbar a{
+        font-size: 1.6rem;
+    }
+    .fa-bars{
+        font-size: 1.4rem;
+    }
+    .leftlanding{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 90%;
+        margin-top: 40px;
+        gap: 15px;
+       
+    }
+    .rightlanding{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-basis: 90%;
+        margin-left: -150px;
+        margin-top: 40px;
+    }
+    div.subsection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        background-color: rgb(250, 138, 80);
+    }
+    .subsection1 .leftsubsection1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 60px;
+        margin-top: 60px;
+        align-items: center;
+        flex: 1 1 40%;
+    }
+    div.subsection2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .rightsubsection2{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .rightsubsection2 img{
+        margin-left: 150px;
+        margin-top: -70px;
+    }
+    .leftsubsection2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        flex: 1 1 30%;
+        padding: 60px 150px;
+    }
+    .leftsubsection2 h2{
+        font-size: 1.4rem;
+        color: rgb(250, 138, 80);
+        text-align: center;
+    
+    }
+    .leftsubsection2 p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    div.subsection3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FA8A50;
+        padding: 60px 80px;
+        gap: 30px;
+    }
+    div.subsection3 > .div1 > h2{
+        font-size: 2rem;
+        color: black;
+    }
+    div.subsection3 a:hover{
+        top: 2px;
+        color: black;
+        background-color: white;
+    }
+    div.footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+        background-color: white;
+        box-shadow: 2px 2px 6px black;
+    }
+    div.footer *{
+        color: #FA8A50;
+    }
+    .dropdowntab-content{
+        display: none;
+        position: absolute;
+        right: 60px;
+        background-color: #FA8A50;
+    }
+    .dropdowntab:hover .dropdowntab-content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 10px;
+    }
+    #carreview{
+        font-size: 18px;
+        margin-left: auto;
+        border-bottom: 1px solid white;
+    }
+    #aboutus{
+        font-size: 18px;
+        margin-left: auto;
+        border-bottom: 1px solid white;
+    }
+    #order{
+        border-bottom: 1px solid white;
+        font-size: 18px;
+        margin-left: auto;
+    }
+    .dropdown-contenttab{
+        display: none;
+    }
+    .dropdowntabform:hover .dropdown-contenttab{
+        display: flex;
+    }
+    .rightlanding img{
+        margin-left: 130px;
+    }
 }
