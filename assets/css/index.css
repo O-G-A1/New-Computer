@@ -390,7 +390,7 @@ div.availablecars{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
     margin-top: 50px;
 }
@@ -398,12 +398,60 @@ div.availablecars div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: stretch;
+    flex: 1 1 20%;
+    border-radius: 30px;
+    padding-bottom: 10px;
     gap: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.792);
+}
+div.availablecars div:hover{
+    box-shadow: 5px 5px 10px black;
+    
+}
+.car2 > img{
+    margin-top: 30px;
+}
+.car2 h4{
+    margin-top: 13px;
+}
+.car4 > img{
+    margin-top: 30px;
+}
+.car4 h4{
+    margin-top: 25px;
+}
+.car5 img{
+    margin-top: 35px;
+}
+.car5 h4{
+    margin-top: 15px;
+}
+.car6 h4{
+    margin-top: 9px;
+}
+.car8 h4{
+    margin-top: 54px;
+}
+.car9 img{
+    margin-top: 77px;
+}
+.car12 h4{
+    margin-top: 38px;
+}
+.car14 h4{
+    margin-top: 7px;
+}
+.car16 img{
+    margin-top: 50px;
+}
+.car16 h4{
+    margin-top: 17px;
 }
 div.availablecars div img{
     position: relative;
     z-index: 0;
-    transition: all ease-in-out 17s;
 }
 
 div.availablecars div img:hover{
@@ -419,26 +467,31 @@ div.availablecars div a{
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.612);
 }
+div.availablecars div a:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.878);
+}
 div.availablecars div h4{
     font-size: 1.3rem;
+    color: #FA8A50;
 }
 div.availablecars div p{
     font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.734);
 }
 div.availablecars div span{
     font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.63);
 
+}
+.choicecarsubsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 
-
-
-
-
-
-
-@media all and (max-width:849px){
+@media all and (max-width:600px){
     .navbar{
         display: none;
     }
@@ -446,73 +499,95 @@ div.availablecars div span{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px 160px;
+        padding: 10px 20px;
+        overflow-x: hidden;
+        box-shadow: none;
+    }
+    #logo{
+        margin-right: auto;
+        color: #FA8A50;
+        font-size: 22px;
+        font-weight: bolder
     }
     .tabnavbar a{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     .fa-bars{
+        margin-left: auto;
         font-size: 1.4rem;
+    }
+    .landing{
+        overflow-x: hidden;
     }
     .leftlanding{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-basis: 90%;
-        margin-top: 40px;
+        flex-basis: 100%;
+        padding: 0;
+        overflow-x: hidden;
+        margin-top: 20px;
         gap: 15px;
-       
+        
     }
     .rightlanding{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        flex-basis: 90%;
-        margin-left: -150px;
-        margin-top: 40px;
+        flex-basis: 100%;
+        margin: 0;
+        margin-top: 20px;
+        overflow-x: hidden;
     }
     div.subsection{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 20px;
         background-color: rgb(250, 138, 80);
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    div.subsection1{
+        max-width: 100%;
     }
     .subsection1 .leftsubsection1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         padding-left: 60px;
         margin-top: 60px;
         align-items: center;
-        flex: 1 1 40%;
+        flex: 1 1 100%;
     }
     div.subsection2{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0px;
         
     }
     .rightsubsection2{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     
     }
     .rightsubsection2 img{
-        margin-left: 150px;
-        margin-top: -70px;
+        overflow-x: hidden;
+        max-width: 100%;
+        margin-top: 0px;
     }
     .leftsubsection2{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        flex: 1 1 30%;
-        padding: 60px 150px;
+        flex: 1 1 100%;
+        padding: 20px;
     }
     .leftsubsection2 h2{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: rgb(250, 138, 80);
         text-align: center;
     
@@ -527,11 +602,11 @@ div.availablecars div span{
         justify-content: center;
         align-items: center;
         background-color: #FA8A50;
-        padding: 60px 80px;
-        gap: 30px;
+        padding: 20px;
+        gap: 20px;
     }
     div.subsection3 > .div1 > h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: black;
     }
     div.subsection3 a:hover{
@@ -543,8 +618,8 @@ div.availablecars div span{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         align-items: center;
         background-color: white;
         box-shadow: 2px 2px 6px black;
@@ -555,187 +630,29 @@ div.availablecars div span{
     .dropdowntab-content{
         display: none;
         position: absolute;
-        right: 60px;
+        right: 20px;
         background-color: #FA8A50;
     }
     .dropdowntab:hover .dropdowntab-content{
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        gap: 15px;
-        border-radius: 10px;
-    }
-    #carreview{
-        font-size: 18px;
-        margin-left: auto;
-        border-bottom: 1px solid white;
-    }
-    #aboutus{
-        font-size: 18px;
-        margin-left: auto;
-        border-bottom: 1px solid white;
-    }
-    #order{
-        border-bottom: 1px solid white;
-        font-size: 18px;
-        margin-left: auto;
-    }
-    .dropdown-contenttab{
-        display: none;
-    }
-    .dropdowntabform:hover .dropdown-contenttab{
-        display: flex;
-    }
-    .rightlanding img{
-        margin-left: 130px;
-    }
-}
-
-@media all and (max-width:615px){
-    .navbar{
-        display: none;
-    }
-    .tabnavbar{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: auto;
-    }
-    .tabnavbar a{
-        font-size: 1.6rem;
-    }
-    .fa-bars{
-        margin-left: auto;
-        font-size: 1.4rem;
-    }
-    .leftlanding{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 90%;
-        margin-top: 40px;
-        gap: 15px;
-       
-    }
-    .rightlanding{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding: 0px;
-        margin-top: 40px;
-    }
-    .rightlanding img{
-        margin-left: 30px;
-    }
-    div.subsection{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        background-color: rgb(250, 138, 80);
-    }
-    .subsection1 .leftsubsection1{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-left: 60px;
-        margin-top: 60px;
-        align-items: center;
-        flex: 1 1 40%;
-    }
-    div.subsection2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
-    .rightsubsection2{
-        display: flex;
-        flex-direction: row;
-    
-    }
-    .rightsubsection2 img{
-        margin-left: 150px;
-        margin-top: -70px;
-    }
-    .leftsubsection2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        flex: 1 1 30%;
-        padding: 60px 150px;
-    }
-    .leftsubsection2 h2{
-        font-size: 1.4rem;
-        color: rgb(250, 138, 80);
-        text-align: center;
-    
-    }
-    .leftsubsection2 p{
-        font-size: 1rem;
-        text-align: center;
-    }
-    div.subsection3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #FA8A50;
-        padding: 60px 80px;
-        gap: 30px;
-    }
-    div.subsection3 > .div1 > h2{
-        font-size: 2rem;
-        color: black;
-    }
-    div.subsection3 a:hover{
-        top: 2px;
-        color: black;
-        background-color: white;
-    }
-    div.footer{
-        display: flex;
-        flex-direction: column;
+        padding: 10px;
         gap: 10px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        align-items: center;
-        background-color: white;
-        /* box-shadow: 2px 2px 6px black; */
-    }
-    div.footer *{
-        color: #FA8A50;
-    }
-    .dropdowntab-content{
-        display: none;
-        position: absolute;
-        right: 60px;
-        background-color: #FA8A50;
-    }
-    .dropdowntab:hover .dropdowntab-content{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
         border-radius: 10px;
     }
     #carreview{
-        font-size: 18px;
+        font-size: 1rem;
         margin-left: auto;
         border-bottom: 1px solid white;
     }
     #aboutus{
-        font-size: 18px;
+        font-size: 1rem;
         margin-left: auto;
         border-bottom: 1px solid white;
     }
     #order{
         border-bottom: 1px solid white;
-        font-size: 18px;
+        font-size: 1rem;
         margin-left: auto;
     }
     .dropdown-contenttab{
@@ -744,5 +661,8 @@ div.availablecars div span{
     .dropdowntabform:hover .dropdown-contenttab{
         display: flex;
     }
-   
+    .rightlanding img{
+        margin-left: 0px;
+        max-width: 100%;
+    }
 }

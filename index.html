@@ -6,9 +6,10 @@
     <title>CruiseControl</title>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="icon" href="./assets/images/automotive-components-councilimg-300x265-removebg-preview.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar">
+<body class="body1">
+    <nav class="navbar" style="z-index: 3;">
         <a class="logo" href="index.html">CruiseControl</a>
         <a href="#">Car Reviews</a>
         <a href="#">About Us</a>
@@ -26,7 +27,7 @@
         </div>
     </nav>
     <nav class="tabnavbar">
-        <a class="logo" href="#">CruiseControl</a>
+        <a id="logo" href="#">CruiseControl</a>
         <div class="dropdowntab"><i class="fa-solid fa-bars"></i>
             <div class="dropdowntab-content">
                 <a id="aboutus" href="#">About Us</a>
@@ -65,26 +66,26 @@
         <p>THE NEXT LEVEL</p>
     </div>
     <div class="subsection1">
-        <div class="leftsubsection1">
+        <div class="leftsubsection1" data-aos="fade-left" data-aos-duration="100">
             <img src="./assets/images/automotive-components-councilimg-300x265-removebg-preview.png" alt="img2">
         </div>
         <div class="rightsubsection1">
-            <div class="div1">
+            <div class="div1" data-aos="fade-right" data-aos-duration="100">
                 <i class="fa-solid fa-hand-fist"></i>
                 <h2>Strength in Design</h2>
                 <p>Our car frame embodies strength and durability, engineered to provide stability and safety on the road</p>
             </div>
-            <div class="div2">
+            <div class="div2" data-aos="fade-left" data-aos-duration="100">
                 <i class="fa-brands fa-sketch"></i>
                 <h2>Precision Engineering</h2>
                 <p>Experience the precision engineering of our car frame, designed to optimize performance and enhance driving dynamics. </p>
             </div>
-            <div class="div3">
+            <div class="div3" data-aos="fade-right" data-aos-duration="100">
                 <i class="fa-solid fa-lightbulb"></i>
                 <h2>Innovative Technology</h2>
                 <p>Step into the future with our innovative car frame technology, integrating cutting-edge materials and design concepts. </p>
             </div>
-            <div class="div4">
+            <div class="div4" data-aos="fade-left" data-aos-duration="100">
                 <i class="fa-solid fa-chart-line"></i>
                 <h2>Unmatched Performance</h2>
                 <p>Feel the power and agility of our car frame as it delivers unmatched performance and responsiveness. </p>
@@ -115,7 +116,10 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://kit.fontawesome.com/2f8df1a2ea.js" crossorigin="anonymous"></script>
 </body>
 </html>
