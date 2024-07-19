@@ -347,14 +347,12 @@ div.footer *{
     flex-direction: column;
     align-self: baseline;
     gap: 24px;
-    /* flex-basis: 1 1 30%; */
 }
 .besideform{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* flex-basis: 1 1 60%; */
 }
 .besideform h2{
     margin-top: 20px;
@@ -622,7 +620,7 @@ div.availablecars div span{
         padding-bottom: 20px;
         align-items: center;
         background-color: white;
-        box-shadow: 2px 2px 6px black;
+        /* box-shadow: 2px 2px 6px black; */
     }
     div.footer *{
         color: #FA8A50;
@@ -663,6 +661,6 @@ div.availablecars div span{
     }
     .rightlanding img{
         margin-left: 0px;
-        max-width: 100%;
+        max-width: 70%;
     }
 }
