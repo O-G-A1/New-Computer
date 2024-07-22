@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CruiseControl</title>
+    <title>choicecars</title>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="icon" href="./assets/images/automotive-components-councilimg-300x265-removebg-preview.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <nav class="navbar" style="z-index: 6;">
-        <a class="logo" href="index.html">CruiseControl</a>
-        <a href="#">Car Reviews</a>
-        <a href="#">About Us</a>
-        <div class="dropdown"><i class="fa-solid fa-car"></i>Order for a car
-            <div class="dropdown-content">
-                <form action="">
-                    <input type="text" required placeholder="First Name">
-                    <input type="text" required placeholder="Last Name">
-                    <input type="email" required placeholder="example@gmail.com">
-                    <input type="number" placeholder="Mobile number">
-                    <textarea name="text" id="feedback" placeholder="Describe your choice car"></textarea>
-                    <button type="submit">Find Dream Car</button>
-                </form>
+    <nav class="mobilenavbar">
+        <a id="logo" href="index.html">CruiseControl</a>
+        <div class="dropdownmob"><i class="fa-solid fa-bars"></i>
+            <div class="dropdown-content" id="choicecarpage">
+                <a style="color:  #FA8A50;" id="aboutus" href="#us">About Us</a>
+                <a style="color:  #FA8A50;" id="carreview" href="choicecarsoriginal.html">Car Reviews</a>
+                <div style="color:  #FA8A50;" id="order" class="dropdownmobform"><i class="fa-solid fa-car"></i>Order for a car
+                    <div class="dropdown-formcontent">
+                        <form action="">
+                            <input type="text" required placeholder="First Name">
+                            <input type="text" required placeholder="Last Name">
+                            <input type="email" required placeholder="example@gmail.com">
+                            <input type="number" placeholder="Mobile number">
+                            <textarea name="text" id="feedback" placeholder="Describe your choice car"></textarea>
+                            <button type="submit">Find Dream Car</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="page2landing">
-        <form class="choosecar">
-            <select name="cars" id="cars" style="width: 200px;">
+    <div class="choicecarslanding">
+        <form class="choosecar" >
+            <select name="cars" id="cars" style="max-width: 200px;">
                 <option value="" selected disabled>Select car brand</option>
                 <option value="Toyota">Toyota</option>
                 <option value="Ford">Ford</option>
@@ -52,7 +56,7 @@
                 <option value="Mazda">Mazda</option>
                 <option value="Ferrari">Ferrari</option>
             </select>
-            <select name="cars" id="cars" style="width: 200px;">
+            <select name="cars" id="cars" style="max-width: 200px;">
                 <option value="" selected disabled>Car year</option>
                 <option value="1994">1994</option>
                 <option value="1995">1995</option>
@@ -86,7 +90,7 @@
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
             </select>
-            <select name="cars" id="cars" style="width: 200px;">
+            <select name="cars" id="cars" style="max-width: 200px;">
                 <option value="" selected disabled>Location</option>
                 <option value="Toyota">Abuja</option>
                 <option value="Ford">Lagos</option>
@@ -96,12 +100,12 @@
                 <option value="BMW">Kogi</option>
                 <option value="BMW">Outside Nigeria</option>
             </select>
-            <select name="cars" id="cars" style="width: 200px;">
+            <select name="cars" id="cars" style="max-width: 200px;">
                 <option value="" selected disabled>New or Used</option>
                 <option value="Toyota">Brand New</option>
                 <option value="Ford">Pre-Owned</option>
             </select>
-            <select name="cars" id="cars" style="width: 200px;">
+            <select name="cars" id="cars" style="max-width: 200px;">
                 <option value="" selected disabled>Payment option</option>
                 <option value="Toyota">Buy once</option>
                 <option value="Ford">Pay in Installment</option>
@@ -113,109 +117,223 @@
             <img src="./assets/images/caringroup-removebg-preview.png" alt="cargroup">
         </div>
     </div>
-    <h3  class="animate__animated animate__fadeInTopLeft buy">We will help you buy with convenience and confidence!</h3>
+    <h3  class="animate__animated animate__fadeInTopLeft buy">Buy with convenience and confidence!</h3>
     <hr>
+
     <div class="availablecars">
         <div class="car1" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car1-removebg-preview.png" alt="car1" width="480px">
+            <img src="./assets/images/car1-removebg-preview.png" alt="car1">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car2" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car2-removebg-preview (1).png" alt="car2" width="400px" >
+        <div class="car2" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car2-removebg-preview (1).png" alt="car2">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car3" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car3-removebg-preview.png" alt="car3" width="400px">
+            <img src="./assets/images/car3-removebg-preview.png" alt="car3">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car4" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car8-removebg-preview.png" alt="car4" width="350px">
+        <div class="car4" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car8-removebg-preview.png" alt="car4">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car5" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car9-removebg-preview.png" alt="car5" width="350px">
+            <img src="./assets/images/car9-removebg-preview.png" alt="car5">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car6" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car3-removebg-preview.png" alt="car6" width="400px">
+        <div class="car6" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car3-removebg-preview.png" alt="car6">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car7" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car6-removebg-preview.png" alt="car7" width="350px">
+            <img src="./assets/images/car6-removebg-preview.png" alt="car7">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car8" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car2-removebg-preview (1).png" alt="car8" width="400px">
+        <div class="car8" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car2-removebg-preview (1).png" alt="car8">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car9" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car8-removebg-preview.png" alt="car9" width="350px">
+            <img src="./assets/images/car8-removebg-preview.png" alt="car9">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car10" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car12-removebg-preview.png" alt="car10" width="500px">
+        <div class="car10" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car12-removebg-preview.png" alt="car10">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car11" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car13-removebg-preview.png" alt="car11" width="350px">
+            <img src="./assets/images/car13-removebg-preview.png" alt="car11">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car12" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car14-removebg-preview.png" alt="car12" width="400px">
+        <div class="car12" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car14-removebg-preview.png" alt="car12">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car13" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car14-removebg-preview.png" alt="car13" width="400px">
+            <img src="./assets/images/car14-removebg-preview.png" alt="car13">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car14" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car15-removebg-preview.png" alt="car14" width="400px">
+        <div class="car14" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car15-removebg-preview.png" alt="car14">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
         <div class="car15" data-aos="fade-right" data-aos-duration="200">
-            <img src="./assets/images/car1-removebg-preview.png" alt="car15" width="480px">
+            <img src="./assets/images/car1-removebg-preview.png" alt="car15">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
-        <div class="car16" data-aos="fade-left" data-aos-duration="200">
-            <img src="./assets/images/car9-removebg-preview.png" alt="car12" width="350px">
+        <div class="car16" data-aos="fade-right" data-aos-duration="200">
+            <img src="./assets/images/car9-removebg-preview.png" alt="car12">
             <h4>Car Name : OGModel</h4>
             <p><span>Installment Price: $14,500.00 &nbsp;</span>Price: $12,600.00</p>
             <a href="#">Buy Car</a>
         </div>
     </div>
-    <div class="choicecarsubsection">
-
-        <a href="https://www.izmostock.com/car-stock-photos-by-brand">Click to see more car details but return to homepage to buy</a>
+    <ul class="listofcars">
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+        <li>Toyota</li>
+    </ul>
+    <hr>
+    <p class="seemore"><a href="" style="color: blue;">See more cars, </a> then <a href="index.html" style="color: blue;">COME BACK</a> to this page for car purchase</p>
+    <div id="us" class="footer"  style="background-color: rgba(0, 0, 0, 0.952); color: azure; margin-top: 10px;">
+        <h4 style="margin-top: 20px;"> &copy; Gbenga Ogunsola 2024. All rights reserved.</h4>
+        <div class="reachme">
+            <p>Reach me @</p>
+            <a href="mailto:gbengaadeboye99@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <h5>Privacy &DotDot;Terms &DotDot;FAQ</h5>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
